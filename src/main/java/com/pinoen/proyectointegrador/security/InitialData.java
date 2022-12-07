@@ -21,9 +21,14 @@ public class InitialData implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
-        String password = bCryptPasswordEncoder.encode("pinoen");
-        Usuario usuario = new Usuario("Emilio", "pinoen", "pinoen@yahoo.com.ar", password, UsuarioRole.ROLE_USER);
-        iUsuarioRepository.save(usuario);
+        BCryptPasswordEncoder encoderUser = new BCryptPasswordEncoder();
+        String passwordUser = encoderUser.encode("pinoen");
+        Usuario user = new Usuario("Emilio", "pinoen", "pinoen@yahoo.com.ar", passwordUser, UsuarioRole.ROLE_USER);
+        iUsuarioRepository.save(user);
+
+        BCryptPasswordEncoder encoderAdmin = new BCryptPasswordEncoder();
+        String passwordAdmin = encoderAdmin.encode("pinoem");
+        Usuario admin = new Usuario("Nicolas", "pinoem", "pinoem@yahoo.com.ar", passwordAdmin, UsuarioRole.ROLE_ADMIN);
+        iUsuarioRepository.save(admin);
     }
 }

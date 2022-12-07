@@ -28,8 +28,10 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/turnos")
-                .permitAll()
+                .antMatchers(  "/turnos.html", "/turnoAlta.html")
+                .hasRole("USER")
+                .antMatchers("/odontologos.html", "odontologoAlta.html", "/pacientes.html", "pacienteAlta.html")
+                .hasRole("ADMIN")
                 .anyRequest()
                 .authenticated()
                 .and()
