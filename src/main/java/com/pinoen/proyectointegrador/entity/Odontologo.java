@@ -3,20 +3,21 @@ package com.pinoen.proyectointegrador.entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Set;
 @Entity
 @Table(name = "odontologos")
 public class Odontologo {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String apellido;
     private String nombre;
     private String matricula;
 
-    @OneToMany(mappedBy = "odontologo")
+    @OneToMany(mappedBy = "odontologo", fetch = FetchType.LAZY)
     @JsonIgnore
-    private Set<Turno> turnos;
+    private Set<Turno> turnos = new HashSet<>();
 
     public Long getId() {
         return id;
