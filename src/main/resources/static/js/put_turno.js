@@ -1,18 +1,18 @@
 $(document).ready(function(){
-    $("#update_odontologo_form").submit(function(evt) {
+    $("#update_turno_form").submit(function(evt) {
         evt.preventDefault();
         try {
-            let odontologoId = $("#odontologo_id").val();
+            let odontologoId = $("#turno_id").val();
 
         let formData = {
-            id: $("#odontologo_id").val(),
-            nombre : $("#nombre").val(),
-            apellido :  $("#apellido").val(),
-            matricula: $("#matricula").val(),
+            id: $("#turno_id").val(),
+            fecha : $("#fecha").val(),
+            paciente :  $("#paciente_id").val(),
+            odontologo: $("#odontologo_id").val(),
         }
 
             $.ajax({
-                url: '/odontologos',
+                url: '/turnos',
                 type: 'PUT',
                 contentType : "application/json",
                 data: JSON.stringify(formData),
@@ -20,16 +20,16 @@ $(document).ready(function(){
                 async: false,
                 cache: false,
                 success: function (response) {
-                    let odontologo = response;
+                    let turno = response;
 
                     let successAlert = '<div class="alert alert-success alert-dismissible">' +
                                             '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
-                                            '<strong> Odontologo actualizado, recargar pagina </strong></div>'
+                                            '<strong> Turno actualizado </strong></div>'
 
 
-                    $("#tr_" + odontologoId + " td.td_first_name").text(odontologo.nombre);
-                    $("#tr_" + odontologoId + " td.td_last_name").text(odontologo.apellido);
-                    $("#tr_" + odontologoId + " td.td_matricula").text(odontologo.matricula);
+                    $("#tr_" + turnoId + " td.td_fecha").text(turno.fecha);
+                    $("#tr_" + turnoId + " td.td_paciente_id").text(turno.paciente.id);
+                    $("#tr_" + turnoId + " td.td_odontologo_id").text(turno.odontologo.id);
 
                     $("#response").empty();
                     $("#response").append(successAlert);
@@ -55,18 +55,18 @@ $(document).ready(function(){
 
     $(document).on("click", "table button.btn_id", function(){
         let id_of_button = (event.srcElement.id);
-        let odontologoId = id_of_button.split("_")[2];
+        let turnoId = id_of_button.split("_")[2];
 
         $.ajax({
-            url: '/odontologos/' + odontologoId,
+            url: '/turnos/' + turnoId,
             type: 'GET',
             success: function(response) {
-                let odontologo = response;
-                $("#odontologo_id").val(odontologo.id);
-                $("#nombre").val(odontologo.nombre);
-                $("#apellido").val(odontologo.apellido);
-                $("#matricula").val(odontologo.matricula);
-                $("#div_odontologo_updating").css({"display": "block"});
+                let turno = response;
+                $("#turno_id").val(turno.id);
+                $("#fecha").val(turno.fecha);
+                $("#paciente_id").val(turno.paciente.id);
+                $("#odontologo_id").val(turno.odontologo.id);
+                $("#div_turno_updating").css({"display": "block"});
             },
             error: function(error){
                 console.log(error);

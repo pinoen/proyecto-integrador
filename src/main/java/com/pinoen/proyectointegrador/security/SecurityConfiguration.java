@@ -28,14 +28,15 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable()
                 .authorizeRequests()
-                .antMatchers(  "/turnos.html", "/turnoAlta.html")
-                .hasRole("USER")
-                .antMatchers("/odontologos.html", "odontologoAlta.html", "/pacientes.html", "pacienteAlta.html")
+                .antMatchers("/odontologos.html", "odontologoAlta.html", "/pacientes.html", "pacienteAlta.html","/turnos.html", "/turnoAlta.html")
                 .hasRole("ADMIN")
+                .antMatchers(  "/turnos.html", "/turnoAlta.html")
+                .permitAll()
                 .anyRequest()
                 .authenticated()
-                .and()
-                .formLogin();
+                .and().formLogin()
+                .and().logout()
+                .and().exceptionHandling().accessDeniedPage("/accessDeniedPage.html");
     }
     @Bean
     public DaoAuthenticationProvider daoAuthenticationProvider(){

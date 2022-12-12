@@ -1,0 +1,147 @@
+[2022-12-10 18:23:33] [ INFO ] [OdontologoService:59] Operacion iniciada: listado de odontologos.
+[2022-12-10 18:23:58] [ INFO ] [OdontologoService:28] Operacion iniciada: registro de nuevo odontologo matricula: 2225
+[2022-12-10 18:23:59] [ INFO ] [OdontologoService:59] Operacion iniciada: listado de odontologos.
+[2022-12-10 18:25:05] [ INFO ] [PacienteService:60] Operacion iniciada: listado de pacientes.
+[2022-12-10 18:25:21] [ INFO ] [PacienteService:29] Operacion iniciada: registro de nuevo paciente dni: 33586954
+[2022-12-10 18:25:23] [ INFO ] [PacienteService:60] Operacion iniciada: listado de pacientes.
+[2022-12-10 18:26:19] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-10 18:26:28] [ INFO ] [TurnoService:28] Operacion iniciada: registro de nuevo turno para el 2022-12-16
+[2022-12-10 18:26:29] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-10 18:26:57] [ INFO ] [OdontologoService:59] Operacion iniciada: listado de odontologos.
+[2022-12-10 18:27:04] [ WARN ] [OdontologoService:53] Operacion iniciada: eliminacion de odontologo id = 1
+[2022-12-10 18:27:04] [ ERROR] [GlobalExceptionHandler:17] could not execute statement; SQL [n/a]; constraint ["FKQTJ6T7MULC2JMFKV92X4CTKWH: PUBLIC.TURNOS FOREIGN KEY(ODONTOLOGO_ID) REFERENCES PUBLIC.ODONTOLOGOS(ID) (CAST(1 AS BIGINT))"; SQL statement:
+delete from odontologos where id=? [23503-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+[2022-12-10 18:27:13] [ WARN ] [OdontologoService:53] Operacion iniciada: eliminacion de odontologo id = 1
+[2022-12-10 18:27:13] [ ERROR] [GlobalExceptionHandler:17] could not execute statement; SQL [n/a]; constraint ["FKQTJ6T7MULC2JMFKV92X4CTKWH: PUBLIC.TURNOS FOREIGN KEY(ODONTOLOGO_ID) REFERENCES PUBLIC.ODONTOLOGOS(ID) (CAST(1 AS BIGINT))"; SQL statement:
+delete from odontologos where id=? [23503-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+[2022-12-10 18:27:20] [ INFO ] [OdontologoService:59] Operacion iniciada: listado de odontologos.
+[2022-12-10 18:27:23] [ INFO ] [PacienteService:60] Operacion iniciada: listado de pacientes.
+[2022-12-10 18:27:26] [ WARN ] [PacienteService:54] Operacion iniciada: eliminacion de paciente id = 1
+[2022-12-10 18:27:26] [ ERROR] [GlobalExceptionHandler:17] could not execute statement; SQL [n/a]; constraint ["FK4OKCQR9IQT2IW6XHY1PPSMO3L: PUBLIC.TURNOS FOREIGN KEY(PACIENTE_ID) REFERENCES PUBLIC.PACIENTES(ID) (CAST(1 AS BIGINT))"; SQL statement:
+delete from pacientes where id=? [23503-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+[2022-12-10 18:27:34] [ WARN ] [PacienteService:54] Operacion iniciada: eliminacion de paciente id = 1
+[2022-12-10 18:27:34] [ ERROR] [GlobalExceptionHandler:17] could not execute statement; SQL [n/a]; constraint ["FK4OKCQR9IQT2IW6XHY1PPSMO3L: PUBLIC.TURNOS FOREIGN KEY(PACIENTE_ID) REFERENCES PUBLIC.PACIENTES(ID) (CAST(1 AS BIGINT))"; SQL statement:
+delete from pacientes where id=? [23503-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+[2022-12-10 18:30:15] [ INFO ] [OdontologoService:59] Operacion iniciada: listado de odontologos.
+[2022-12-10 18:30:24] [ INFO ] [OdontologoService:28] Operacion iniciada: registro de nuevo odontologo matricula: 145263
+[2022-12-10 18:30:26] [ INFO ] [OdontologoService:59] Operacion iniciada: listado de odontologos.
+[2022-12-10 18:30:38] [ WARN ] [OdontologoService:53] Operacion iniciada: eliminacion de odontologo id = 1
+[2022-12-10 18:31:26] [ INFO ] [PacienteService:60] Operacion iniciada: listado de pacientes.
+[2022-12-10 18:31:40] [ INFO ] [PacienteService:29] Operacion iniciada: registro de nuevo paciente dni: 29429563
+[2022-12-10 18:31:43] [ INFO ] [PacienteService:60] Operacion iniciada: listado de pacientes.
+[2022-12-10 18:31:55] [ WARN ] [PacienteService:54] Operacion iniciada: eliminacion de paciente id = 1
+[2022-12-10 18:32:12] [ INFO ] [OdontologoService:59] Operacion iniciada: listado de odontologos.
+[2022-12-10 18:32:20] [ INFO ] [OdontologoService:28] Operacion iniciada: registro de nuevo odontologo matricula: 2225
+[2022-12-10 18:32:22] [ INFO ] [OdontologoService:59] Operacion iniciada: listado de odontologos.
+[2022-12-10 18:32:25] [ INFO ] [PacienteService:60] Operacion iniciada: listado de pacientes.
+[2022-12-10 18:32:42] [ INFO ] [PacienteService:29] Operacion iniciada: registro de nuevo paciente dni: 33586954
+[2022-12-10 18:32:44] [ INFO ] [PacienteService:60] Operacion iniciada: listado de pacientes.
+[2022-12-10 18:32:47] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-10 18:32:56] [ INFO ] [TurnoService:28] Operacion iniciada: registro de nuevo turno para el 2022-12-16
+[2022-12-10 18:32:56] [ ERROR] [GlobalExceptionHandler:17] could not execute statement; SQL [n/a]; constraint [FKQTJ6T7MULC2JMFKV92X4CTKWH]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+[2022-12-10 18:33:02] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-10 18:33:33] [ INFO ] [TurnoService:28] Operacion iniciada: registro de nuevo turno para el 2022-12-09
+[2022-12-10 18:33:33] [ ERROR] [GlobalExceptionHandler:17] could not execute statement; SQL [n/a]; constraint [FKQTJ6T7MULC2JMFKV92X4CTKWH]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+[2022-12-10 18:33:35] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-10 18:33:48] [ INFO ] [OdontologoService:59] Operacion iniciada: listado de odontologos.
+[2022-12-10 18:33:52] [ INFO ] [PacienteService:60] Operacion iniciada: listado de pacientes.
+[2022-12-10 18:33:55] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-10 18:34:04] [ INFO ] [TurnoService:28] Operacion iniciada: registro de nuevo turno para el 2022-12-17
+[2022-12-10 18:34:07] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-10 18:34:19] [ INFO ] [OdontologoService:59] Operacion iniciada: listado de odontologos.
+[2022-12-10 18:34:22] [ INFO ] [OdontologoService:35] Operacion iniciada: busqueda de odontologo id = 2
+[2022-12-10 18:34:40] [ INFO ] [OdontologoService:46] Operacion iniciada: actualizacion de datos de odontologo matricula: 2225
+[2022-12-10 18:34:50] [ INFO ] [OdontologoService:59] Operacion iniciada: listado de odontologos.
+[2022-12-10 18:34:58] [ INFO ] [PacienteService:60] Operacion iniciada: listado de pacientes.
+[2022-12-10 18:34:59] [ INFO ] [PacienteService:36] Operacion iniciada: busqueda de paciente id = 2
+[2022-12-10 18:35:25] [ INFO ] [PacienteService:47] Operacion iniciada: actualizacion de datos de paciente dni: 33586954
+[2022-12-10 18:35:35] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-12 08:17:51] [ INFO ] [OdontologoService:59] Operacion iniciada: listado de odontologos.
+[2022-12-12 08:18:04] [ INFO ] [OdontologoService:28] Operacion iniciada: registro de nuevo odontologo matricula: 1111
+[2022-12-12 08:18:06] [ INFO ] [OdontologoService:59] Operacion iniciada: listado de odontologos.
+[2022-12-12 08:18:43] [ INFO ] [OdontologoService:28] Operacion iniciada: registro de nuevo odontologo matricula: 2225
+[2022-12-12 08:18:58] [ INFO ] [OdontologoService:59] Operacion iniciada: listado de odontologos.
+[2022-12-12 08:19:05] [ INFO ] [PacienteService:60] Operacion iniciada: listado de pacientes.
+[2022-12-12 08:19:48] [ INFO ] [PacienteService:29] Operacion iniciada: registro de nuevo paciente dni: 29429563
+[2022-12-12 08:19:58] [ INFO ] [PacienteService:60] Operacion iniciada: listado de pacientes.
+[2022-12-12 08:20:23] [ INFO ] [PacienteService:29] Operacion iniciada: registro de nuevo paciente dni: 33586954
+[2022-12-12 08:20:27] [ INFO ] [PacienteService:60] Operacion iniciada: listado de pacientes.
+[2022-12-12 08:20:36] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-12 08:21:00] [ INFO ] [TurnoService:28] Operacion iniciada: registro de nuevo turno para el 2022-12-19
+[2022-12-12 08:21:09] [ INFO ] [TurnoService:28] Operacion iniciada: registro de nuevo turno para el 2022-12-20
+[2022-12-12 08:21:11] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-12 08:26:14] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-12 08:26:29] [ INFO ] [OdontologoService:59] Operacion iniciada: listado de odontologos.
+[2022-12-12 08:26:36] [ INFO ] [OdontologoService:35] Operacion iniciada: busqueda de odontologo id = 1
+[2022-12-12 08:26:43] [ INFO ] [OdontologoService:46] Operacion iniciada: actualizacion de datos de odontologo matricula: 1115
+[2022-12-12 08:27:05] [ INFO ] [PacienteService:60] Operacion iniciada: listado de pacientes.
+[2022-12-12 08:27:07] [ INFO ] [PacienteService:36] Operacion iniciada: busqueda de paciente id = 1
+[2022-12-12 08:27:12] [ INFO ] [PacienteService:47] Operacion iniciada: actualizacion de datos de paciente dni: 29429563
+[2022-12-12 08:27:21] [ WARN ] [PacienteService:54] Operacion iniciada: eliminacion de paciente id = 1
+[2022-12-12 08:27:22] [ ERROR] [GlobalExceptionHandler:17] could not execute statement; SQL [n/a]; constraint ["FK4OKCQR9IQT2IW6XHY1PPSMO3L: PUBLIC.TURNOS FOREIGN KEY(PACIENTE_ID) REFERENCES PUBLIC.PACIENTES(ID) (CAST(1 AS BIGINT))"; SQL statement:
+delete from pacientes where id=? [23503-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+[2022-12-12 08:27:34] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-12 08:27:36] [ INFO ] [TurnoService:35] Operacion iniciada: busqueda de turno id = 1
+[2022-12-12 08:27:59] [ ERROR] [GlobalExceptionHandler:17] JSON parse error: Cannot coerce empty String ("") to `com.pinoen.proyectointegrador.entity.Paciente` value (but could if coercion was enabled using `CoercionConfig`); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot coerce empty String ("") to `com.pinoen.proyectointegrador.entity.Paciente` value (but could if coercion was enabled using `CoercionConfig`)
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 43] (through reference chain: com.pinoen.proyectointegrador.dto.TurnoDTO["paciente"])
+[2022-12-12 08:27:59] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-12 08:46:30] [ INFO ] [OdontologoService:59] Operacion iniciada: listado de odontologos.
+[2022-12-12 08:46:39] [ INFO ] [OdontologoService:28] Operacion iniciada: registro de nuevo odontologo matricula: 1111
+[2022-12-12 08:46:41] [ INFO ] [OdontologoService:59] Operacion iniciada: listado de odontologos.
+[2022-12-12 08:46:44] [ INFO ] [PacienteService:60] Operacion iniciada: listado de pacientes.
+[2022-12-12 08:47:03] [ INFO ] [PacienteService:29] Operacion iniciada: registro de nuevo paciente dni: 33586954
+[2022-12-12 08:47:30] [ INFO ] [PacienteService:60] Operacion iniciada: listado de pacientes.
+[2022-12-12 08:47:33] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-12 08:47:49] [ INFO ] [TurnoService:28] Operacion iniciada: registro de nuevo turno para el 2022-12-13
+[2022-12-12 08:47:57] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-12 08:47:59] [ INFO ] [TurnoService:35] Operacion iniciada: busqueda de turno id = 1
+[2022-12-12 08:48:13] [ ERROR] [GlobalExceptionHandler:17] JSON parse error: Cannot construct instance of `com.pinoen.proyectointegrador.entity.Paciente` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('1'); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.pinoen.proyectointegrador.entity.Paciente` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('1')
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 43] (through reference chain: com.pinoen.proyectointegrador.dto.TurnoDTO["paciente"])
+[2022-12-12 08:48:13] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-12 08:48:19] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-12 08:49:24] [ INFO ] [TurnoService:28] Operacion iniciada: registro de nuevo turno para el 2022-12-14
+[2022-12-12 08:49:26] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-12 08:50:52] [ INFO ] [PacienteService:60] Operacion iniciada: listado de pacientes.
+[2022-12-12 08:50:54] [ INFO ] [OdontologoService:59] Operacion iniciada: listado de odontologos.
+[2022-12-12 08:50:57] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-12 08:51:06] [ INFO ] [TurnoService:28] Operacion iniciada: registro de nuevo turno para el 2022-12-15
+[2022-12-12 08:51:08] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-12 09:20:43] [ INFO ] [OdontologoService:59] Operacion iniciada: listado de odontologos.
+[2022-12-12 09:20:51] [ INFO ] [OdontologoService:28] Operacion iniciada: registro de nuevo odontologo matricula: 1111
+[2022-12-12 09:20:53] [ INFO ] [OdontologoService:59] Operacion iniciada: listado de odontologos.
+[2022-12-12 09:21:01] [ INFO ] [PacienteService:60] Operacion iniciada: listado de pacientes.
+[2022-12-12 09:21:19] [ INFO ] [PacienteService:29] Operacion iniciada: registro de nuevo paciente dni: 33586954
+[2022-12-12 09:21:21] [ INFO ] [PacienteService:60] Operacion iniciada: listado de pacientes.
+[2022-12-12 09:21:26] [ INFO ] [OdontologoService:59] Operacion iniciada: listado de odontologos.
+[2022-12-12 09:22:41] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-12 09:22:51] [ INFO ] [TurnoService:28] Operacion iniciada: registro de nuevo turno para el 2022-12-13
+[2022-12-12 09:22:53] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-12 09:37:37] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-12 09:37:48] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-12 09:38:00] [ INFO ] [TurnoService:28] Operacion iniciada: registro de nuevo turno para el 2022-12-12
+[2022-12-12 09:38:00] [ ERROR] [GlobalExceptionHandler:17] could not execute statement; SQL [n/a]; constraint [FKQTJ6T7MULC2JMFKV92X4CTKWH]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+[2022-12-12 09:38:01] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-12 09:38:14] [ INFO ] [OdontologoService:59] Operacion iniciada: listado de odontologos.
+[2022-12-12 09:38:22] [ INFO ] [OdontologoService:28] Operacion iniciada: registro de nuevo odontologo matricula: 1111
+[2022-12-12 09:38:24] [ INFO ] [OdontologoService:59] Operacion iniciada: listado de odontologos.
+[2022-12-12 09:38:27] [ INFO ] [PacienteService:60] Operacion iniciada: listado de pacientes.
+[2022-12-12 09:38:43] [ INFO ] [PacienteService:29] Operacion iniciada: registro de nuevo paciente dni: 29429563
+[2022-12-12 09:38:45] [ INFO ] [PacienteService:60] Operacion iniciada: listado de pacientes.
+[2022-12-12 09:38:49] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-12 09:38:59] [ INFO ] [TurnoService:28] Operacion iniciada: registro de nuevo turno para el 2022-12-19
+[2022-12-12 09:39:01] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-12 09:39:21] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-12 09:39:34] [ INFO ] [TurnoService:28] Operacion iniciada: registro de nuevo turno para el 2022-12-19
+[2022-12-12 09:39:37] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-12 09:39:46] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-12 09:39:57] [ INFO ] [TurnoService:28] Operacion iniciada: registro de nuevo turno para el 2022-12-19
+[2022-12-12 09:39:59] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-12 09:41:15] [ INFO ] [TurnoService:35] Operacion iniciada: busqueda de turno id = 4
+[2022-12-12 09:41:24] [ ERROR] [GlobalExceptionHandler:17] JSON parse error: Cannot construct instance of `com.pinoen.proyectointegrador.entity.Paciente` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('1'); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.pinoen.proyectointegrador.entity.Paciente` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('1')
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 43] (through reference chain: com.pinoen.proyectointegrador.dto.TurnoDTO["paciente"])
+[2022-12-12 09:41:24] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-12 09:41:31] [ INFO ] [TurnoService:35] Operacion iniciada: busqueda de turno id = 4
+[2022-12-12 09:41:40] [ ERROR] [GlobalExceptionHandler:17] JSON parse error: Cannot construct instance of `com.pinoen.proyectointegrador.entity.Paciente` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('1'); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.pinoen.proyectointegrador.entity.Paciente` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('1')
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 43] (through reference chain: com.pinoen.proyectointegrador.dto.TurnoDTO["paciente"])
+[2022-12-12 09:41:40] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.
+[2022-12-12 09:41:46] [ INFO ] [TurnoService:60] Operacion iniciada: listado de turnos.

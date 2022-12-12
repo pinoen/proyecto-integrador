@@ -89,4 +89,25 @@ public class Paciente {
         this.turnos = turnos;
     }
 
+    public Paciente(Long id, String apellido, String nombre, String dni, LocalDate fechaIngreso, String email, Domicilio domicilio) {
+        this.id = id;
+        this.apellido = apellido;
+        this.nombre = nombre;
+        this.dni = dni;
+        this.fechaIngreso = fechaIngreso;
+        this.email = email;
+        this.domicilio = domicilio;
+    }
+
+    public Paciente(String apellido, String nombre, String dni, LocalDate fechaIngreso, String email, Domicilio domicilio) {
+        this.apellido = apellido;
+        this.nombre = nombre;
+        this.dni = dni;
+        this.fechaIngreso = fechaIngreso;
+        this.email = email;
+        this.domicilio = domicilio;
+    }
+
+    public Paciente() {
+    }
 }

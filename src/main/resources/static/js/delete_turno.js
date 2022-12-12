@@ -1,18 +1,18 @@
 $(document).ready(function () {
-    let pacienteId = 0;
+    let turnoId = 0;
 
-    $(document).on("click", "#div_paciente_table table button.btn_delete", function () {
+    $(document).on("click", "#div_turno_table table button.btn_delete", function () {
         let btn_id = (event.srcElement.id);
-        pacienteId = btn_id.split("_")[2];
+        turnoId = btn_id.split("_")[2];
 
         $("div.modal-body")
-            .text("Querés eliminar paciente con ID = " + pacienteId + "?");
+            .text("Querés eliminar turno con ID = " + turnoId + "?");
         $("#model-delete-btn").css({ "display": "inline" });
     });
 
     $(document).on("click", "#model-delete-btn", function () {
         $.ajax({
-            url: '/pacientes/' + pacienteId,
+            url: '/turnos/' + turnoId,
             type: 'DELETE',
             success: function (response) {
                 $("div.modal-body")
@@ -21,17 +21,16 @@ $(document).ready(function () {
                 $("#model-delete-btn").css({ "display": "none" });
                 $("button.btn.btn-secondary").text("Close");
 
-                // Delete the paciente row on HTML page
-                let row_id = "tr_" + pacienteId;
+                // Delete the turno row on HTML page
+                let row_id = "tr_" + turnoId;
                 $("#" + row_id).remove();
-                $("#div_paciente_updating").css({ "display": "none" });
+                $("#div_turno_updating").css({ "display": "none" });
             },
             error: function (error) {
                 console.error(JSON.stringify(error))
-                $("#div_paciente_updating").css({ "display": "none" });
+                $("#div_turno_updating").css({ "display": "none" });
                 alert("Error -> " + error);
             }
         });
     });
 });
-

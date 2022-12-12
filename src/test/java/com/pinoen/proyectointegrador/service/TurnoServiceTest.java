@@ -1,12 +1,14 @@
 package com.pinoen.proyectointegrador.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.pinoen.proyectointegrador.dto.DomicilioDTO;
 import com.pinoen.proyectointegrador.dto.OdontologoDTO;
 import com.pinoen.proyectointegrador.dto.PacienteDTO;
 import com.pinoen.proyectointegrador.dto.TurnoDTO;
 import com.pinoen.proyectointegrador.entity.Domicilio;
 import com.pinoen.proyectointegrador.entity.Odontologo;
 import com.pinoen.proyectointegrador.entity.Paciente;
+import com.pinoen.proyectointegrador.entity.Turno;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
@@ -37,13 +39,24 @@ class TurnoServiceTest {
     @Test
     @Order(1)
     void createTurno() {
-        PacienteDTO pacienteDTO = new PacienteDTO("Fernandez", "Tomas", "30145632", LocalDate.of(2022,12,01),"tfernandez@gmail.com", new Domicilio("San Martin", 741, "Mendoza", "Mendoza"));
-        OdontologoDTO odontologoDTO = new OdontologoDTO("Perez", "Pablo", "A1111");
+        PacienteDTO pacienteDTO = new PacienteDTO("Fernandez",
+                "Tomas",
+                "30145632",
+                LocalDate.of(2022,12,01),
+                "tfernandez@gmail.com",
+                new Domicilio("San Martin", 741, "Mendoza", "Mendoza"));
+        iPacienteService.createPaciente(pacienteDTO);
 
-        TurnoDTO turnoDTO = new TurnoDTO();
+        OdontologoDTO odontologoDTO = new OdontologoDTO("Perez", "Pablo", "A1111");
+        iOdontologoService.createOdontologo(odontologoDTO);
+
+        Paciente paciente = mapper.convertValue(pacienteDTO, Paciente.class);
+        Odontologo odontologo = mapper.convertValue(odontologoDTO, Odontologo.class);
+
+        TurnoDTO turnoDTO = new TurnoDTO(paciente, odontologo, LocalDate.of(2022,12,31));
         iTurnoService.createTurno(turnoDTO);
 
-        assertEquals(1L, turnoDTO.getId());
+        assertNotNull(iTurnoService.findTurnoById(1L));
     }
 
     @Test
