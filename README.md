@@ -1,9 +1,8 @@
 # Proyecto-integrador
-# Clinica Odontologica - Spring Boot - ORM-JPA
+## Clinica Odontologica - Spring Boot - ORM-JPA
+### Back End I
+#### Trabajo integrador - Sistema de reserva de turnos
 
-
-# Back End I
-# Trabajo integrador - Sistema de reserva de turnos
 Se desea implementar un sistema que permita administrar la reserva de turnos para una
 clínica odontológica. Este debe cumplir con los siguientes requerimientos:
 
